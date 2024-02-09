@@ -1,5 +1,6 @@
 const video = document.querySelector(".video");
 const videoPlayer = document.querySelector(".video-player");
+const container = document.querySelector(".video-player-container");
 const playBtn = document.getElementById("play");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -134,26 +135,14 @@ video.addEventListener("click", () => {
 
 // video hidden item
 videoPlayer.addEventListener("mouseout", () => {
-  currTime.setAttribute("style", "opacity: 0");
-  durTime.setAttribute("style", "opacity: 0");
-  progressContainer.setAttribute("style", "opacity: 0");
-  progress.setAttribute("style", "opacity: 0;");
-  playBtn.setAttribute("style", "opacity: 0");
-  prevBtn.setAttribute("style", "opacity: 0");
-  nextBtn.setAttribute("style", "opacity: 0");
+  container.setAttribute("style", "opacity: 0");
   skip.forEach((item) => {
     item.setAttribute("style", "opacity: 0");
   });
 });
 
 videoPlayer.addEventListener("mouseover", () => {
-  currTime.setAttribute("style", "opacity: 1");
-  durTime.setAttribute("style", "opacity: 1");
-  progressContainer.setAttribute("style", "opacity: 1");
-  progress.setAttribute("style", "opacity: 1; width: 0%");
-  playBtn.setAttribute("style", "opacity: 1");
-  prevBtn.setAttribute("style", "opacity: 1");
-  nextBtn.setAttribute("style", "opacity: 1");
+  container.setAttribute("style", "opacity: 1");
   skip.forEach((item) => {
     item.setAttribute("style", "opacity: 1");
   });

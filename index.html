@@ -18,25 +18,27 @@
     <h1>Video Player</h1>
     <div class="video-player">
       <video class="video" src="./video/HTML-Introduction.mp4"></video>
-      <div class="showTime">
-        <span class="currTime" id="currTime"></span>
-        <span class="durTime" id="durTime"></span>
-      </div>
-      <div class="controls">
-        <div class="progress-container" id="progress-container">
-          <div class="progress" id="progress"></div>
+      <div class="video-player-container">
+        <div class="showTime">
+          <span class="currTime" id="currTime"></span>
+          <span class="durTime" id="durTime"></span>
         </div>
-        <button id="prev">
-          <i id="i" class="fas fa-backward"></i>
-        </button>
-        <button id="play">
-          <i id="i" class="fa fa-play" aria-hidden="true"></i>
-        </button>
-        <button id="next">
-          <i id="i" class="fas fa-forward"></i>
-        </button>
-        <button class="controls__button" data-skip="-10">« 10s</button>
-        <button class="controls__button" data-skip="10">10s »</button>
+        <div class="controls">
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+          <button id="prev">
+            <i id="i" class="fas fa-backward"></i>
+          </button>
+          <button id="play">
+            <i id="i" class="fa fa-play" aria-hidden="true"></i>
+          </button>
+          <button id="next">
+            <i id="i" class="fas fa-forward"></i>
+          </button>
+          <button class="controls__button" data-skip="-10">« 10s</button>
+          <button class="controls__button" data-skip="10">10s »</button>
+        </div>
       </div>
     </div>
 
